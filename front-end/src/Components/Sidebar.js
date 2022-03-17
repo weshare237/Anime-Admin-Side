@@ -5,49 +5,6 @@ const Sidebar = () => {
     <div className='sidebar sidebar-style-2' data-background-color='dark2'>
       <div className='sidebar-wrapper scrollbar scrollbar-inner'>
         <div className='sidebar-content'>
-          <div className='user'>
-            <div className='avatar-sm float-left mr-2'>
-              <img
-                src='assets/img/profile.jpg'
-                alt='...'
-                className='avatar-img rounded-circle'
-              />
-            </div>
-            <div className='info'>
-              <a
-                data-toggle='collapse'
-                href='#collapseExample'
-                aria-expanded='true'
-              >
-                <span>
-                  Hizrian
-                  <span className='user-level'>Administrator</span>
-                  <span className='caret'></span>
-                </span>
-              </a>
-              <div className='clearfix'></div>
-
-              <div className='collapse in' id='collapseExample'>
-                <ul className='nav'>
-                  <li>
-                    <a href='#profile'>
-                      <span className='link-collapse'>My Profile</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#edit'>
-                      <span className='link-collapse'>Edit Profile</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#settings'>
-                      <span className='link-collapse'>Settings</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
           <ul className='nav nav-primary'>
             <li className='nav-item active'>
               <a
@@ -84,100 +41,25 @@ const Sidebar = () => {
             <li className='nav-item'>
               <a data-toggle='collapse' href='#base'>
                 <i className='fas fa-layer-group'></i>
-                <p>Base</p>
+                <p>Notifications</p>
                 <span className='caret'></span>
               </a>
               <div className='collapse' id='base'>
                 <ul className='nav nav-collapse'>
                   <li>
-                    <a href='components/avatars.html'>
-                      <span className='sub-item'>Avatars</span>
+                    <a href='/notifications/settings'>
+                      <span className='sub-item'>Settings</span>
                     </a>
                   </li>
                   <li>
                     <a href='components/buttons.html'>
-                      <span className='sub-item'>Buttons</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='components/gridsystem.html'>
-                      <span className='sub-item'>Grid System</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='components/panels.html'>
-                      <span className='sub-item'>Panels</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='components/notifications.html'>
-                      <span className='sub-item'>Notifications</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='components/sweetalert.html'>
-                      <span className='sub-item'>Sweet Alert</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='components/font-awesome-icons.html'>
-                      <span className='sub-item'>Font Awesome Icons</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='components/simple-line-icons.html'>
-                      <span className='sub-item'>Simple Line Icons</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='components/flaticons.html'>
-                      <span className='sub-item'>Flaticons</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='components/typography.html'>
-                      <span className='sub-item'>Typography</span>
+                      <span className='sub-item'>Notify users</span>
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li className='nav-item'>
-              <a data-toggle='collapse' href='#sidebarLayouts'>
-                <i className='fas fa-th-list'></i>
-                <p>Sidebar Layouts</p>
-                <span className='caret'></span>
-              </a>
-              <div className='collapse' id='sidebarLayouts'>
-                <ul className='nav nav-collapse'>
-                  <li>
-                    <a href='sidebar-style-1.html'>
-                      <span className='sub-item'>Sidebar Style 1</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='overlay-sidebar.html'>
-                      <span className='sub-item'>Overlay Sidebar</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='compact-sidebar.html'>
-                      <span className='sub-item'>Compact Sidebar</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='static-sidebar.html'>
-                      <span className='sub-item'>Static Sidebar</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='icon-menu.html'>
-                      <span className='sub-item'>Icon Menu</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+
             <li className='nav-item'>
               <a data-toggle='collapse' href='#forms'>
                 <i className='fas fa-pen-square'></i>
@@ -197,14 +79,14 @@ const Sidebar = () => {
             <li className='nav-item'>
               <a data-toggle='collapse' href='#tables'>
                 <i className='fas fa-table'></i>
-                <p>Tables</p>
+                <p>Series</p>
                 <span className='caret'></span>
               </a>
               <div className='collapse' id='tables'>
                 <ul className='nav nav-collapse'>
                   <li>
-                    <a href='tables/tables.html'>
-                      <span className='sub-item'>Basic Table</span>
+                    <a href='/manage-series'>
+                      <span className='sub-item'>View all</span>
                     </a>
                   </li>
                   <li>
@@ -309,18 +191,6 @@ const Sidebar = () => {
                   </li>
                 </ul>
               </div>
-            </li>
-            <li className='mx-4 mt-2'>
-              <a
-                href='http://themekita.com/atlantis-bootstrap-dashboard.html'
-                className='btn btn-primary btn-block'
-              >
-                <span className='btn-label mr-2'>
-                  {' '}
-                  <i className='fa fa-heart'></i>{' '}
-                </span>
-                Buy Pro
-              </a>
             </li>
           </ul>
         </div>

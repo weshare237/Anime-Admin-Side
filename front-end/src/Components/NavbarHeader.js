@@ -1,6 +1,15 @@
 import React from 'react'
+import { deleteCookie } from '../Helpers/cookies'
+import { getLocalStorage } from '../Helpers/localStorage'
+import { Link } from 'react-router-dom'
 
 const NavbarHeader = () => {
+  const adminAuth = localStorage.getItem('user')
+  const logoutAdmin = () => {
+    localStorage.removeItem('user')
+    deleteCookie('token')
+  }
+
   return (
     <nav
       className='navbar navbar-header navbar-expand-lg'
@@ -109,7 +118,7 @@ const NavbarHeader = () => {
                 </div>
               </li>
               <li>
-                <a className='see-all' href='javascript:void(0);'>
+                <a className='see-all' href=''>
                   See all messages<i className='fa fa-angle-right'></i>{' '}
                 </a>
               </li>
@@ -183,7 +192,7 @@ const NavbarHeader = () => {
                 </div>
               </li>
               <li>
-                <a className='see-all' href='javascript:void(0);'>
+                <a className='see-all' href=''>
                   See all notifications<i className='fa fa-angle-right'></i>{' '}
                 </a>
               </li>
@@ -301,9 +310,9 @@ const NavbarHeader = () => {
                     Account Setting
                   </a>
                   <div className='dropdown-divider'></div>
-                  <a className='dropdown-item' href='#'>
+                  <Link className='dropdown-item' to='/' onClick={logoutAdmin}>
                     Logout
-                  </a>
+                  </Link>
                 </li>
               </div>
             </ul>
