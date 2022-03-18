@@ -24,7 +24,7 @@ const Login = () => {
       setEmail('')
       setPassword('')
     } catch (error) {
-      toast.error('Wrong email or password')
+      toast.error('Something when wron please try again')
     }
   }
 
